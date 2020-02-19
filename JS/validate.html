@@ -1,0 +1,24 @@
+<DocumentType HTML>
+<html>
+    <body>
+            <form name="myForm" action="hai.html"
+            onsubmit= "return validateForm()" method="post">
+            Name: <input type="text" name="fname">
+            <input type="submit" value="submit"
+            name:Username: <input type = "text"
+           </form>
+           </body>
+       <script>
+         function validateForm()
+         {
+             var x= document.forms["myForm"]["fname"].value;
+             if (x == "")
+             {
+                 alert("Name must be filled out");
+                 return false
+             }
+         }  
+       </script>
+    </body>
+</html>
+</DocumentType>
